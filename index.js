@@ -63,7 +63,7 @@ app.use("/accomodations", accomodationRoutes);
 app.use("/services", servicesRoutes);
 app.use("/medicals", medicalRoutes);
 
-app.listen(8080, '127.0.0.1', function(){
+app.listen(process.env.PORT, process.env.IP, function(){
 	console.log("server started......!!!!");
 });
 
